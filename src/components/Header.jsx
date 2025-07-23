@@ -18,9 +18,7 @@ function Header() {
     i18n.changeLanguage(newLang);
   };
 
-  const currentFlag = i18n.language === "es"
-    ? {es}
-    : {en};
+ const currentFlag = i18n.language === "es" ? es : en;
 
   return (
     <header className="header">
