@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
 
-import es from '../assets/languages/español.png';
-import en from '../assets/languages/ingles.png';
+import es from '../assets/languages/es.png';
+import en from '../assets/languages/en.png';
 
 
 function Header() {
