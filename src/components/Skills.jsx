@@ -1,16 +1,27 @@
 import "./Skills.css";
 
+import html from "../assets/skills/html.png";
+import css from "../assets/skills/css.png";
+import js from "../assets/skills/js.png";
+import react from "../assets/skills/react.png";
+import unity from "../assets/skills/unity.png";
+import cplusplus from "../assets/skills/cplusplus.png";
+import visualStudio from "../assets/skills/visualStudio.png";
+import krita from "../assets/skills/krita.png";
+import blender from "../assets/skills/blender.png";
+
 const skills = [
-  { name: "HTML5", icon: "./src/assets/skills/html.png" },
-  { name: "CSS3", icon: "./src/assets/skills/css.png" },
-  { name: "JavaScript", icon: "/src/assets/skills/js.png" },
-  { name: "React", icon: "./src/assets/skills/react.png" },
-  { name: "Unity", icon: "./src/assets/skills/unity.png" },
-  { name: "C++", icon: "./src/assets/skills/cplusplus.png" },
-  { name: "Visual Studio", icon: "./src/assets/skills/visualStudio.png"},
-  { name: "Krita", icon: "./src/assets/skills/krita.png"},
-  { name: "Blender", icon: "/src/assets/skills/blender.png"},
+  { name: "HTML5", icon: html },
+  { name: "CSS3", icon: css },
+  { name: "JavaScript", icon: js },
+  { name: "React", icon: react },
+  { name: "Unity", icon: unity },
+  { name: "C++", icon: cplusplus },
+  { name: "Visual Studio", icon: visualStudio },
+  { name: "Krita", icon: krita },
+  { name: "Blender", icon: blender },
 ];
+
 
 const Skills = () => {
   return (
