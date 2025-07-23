@@ -1,0 +1,26 @@
+{
+  "about": "About Me",
+  "projects": "Projects",
+  "contact": "Contact",
+  
+  "title-about": "Game Designer & Developer",
+  "p1-about": "Hello! I'm Julio Rodríguez, a Game Designer and Developer with experience in 2D and 3D projects, focused on creating playable experiences with visual and mechanical impact.",
+  "p2-about": "I specialize in gameplay design, physics, and mechanics, and work with tools like Unity, C++, and Blender. I'm passionate about combining programming, design, and art to create games that feel good to play.",
+  "p3-about": "I always strive for every movement, jump, or attack to have the right fluidity and response. I believe in detail, prototyping, and telling stories through design.",
+  
+  "title-projects": "Personal Works",
+  
+  "project1-title": "Radioactive Train",
+  "project1-desc": "Solve quick math to keep your radioactive train rolling.",
+  
+  "project2-title": "Platformer with Stacks and Queues",
+  "project2-desc": "2D platform game with stack and queue data structures.",
+  
+  "project3-title": "Blocks in Order",
+  "project3-desc": "Hit the numbered blocks in the right order before time runs out!",
+  
+  "project4-title": "Ragdoll Cannon Prototype",
+  "project4-desc": "Prototype of a ragdoll cannon built with C++",
+
+  "copyright": "Copyright © 2025 Julio Rodríguez | All images, logos and names are used with permission."
+}

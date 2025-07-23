@@ -1,0 +1,27 @@
+{
+  "about": "Sobre Mí",
+  "projects": "Proyectos",
+  "contact": "Contacto",
+  
+  "title-about": "Diseñador y Desarrollador de Juegos",
+  "p1-about": "¡Hola! Soy Julio Rodríguez, Diseñador y Desarrollador de Juegos, con experiencia en proyectos 2D y 3D, enfocado en crear experiencias jugables con impacto visual y mecánico.",
+  "p2-about": "Me especializo en diseño de gameplay, físicas y mecánicas, y trabajo con herramientas como Unity, C++ y Blender. Me apasiona combinar programación, diseño y arte para lograr juegos que se sientan bien de jugar.",
+  "p3-about": "Siempre busco que cada movimiento, salto o ataque tenga la fluidez y respuesta justa. Creo en el detalle, el prototipado y en contar historias a través del diseño.",
+  
+  "title-projects": "Trabajos Personales",
+  
+  "project1-title": "Tren Radiactivo",
+  "project1-desc": "Resuelve cuentas rápidas para mantener tu tren radiactivo en marcha.",
+  
+  "project2-title": "Plataformas con Pilas y Colas",
+  "project2-desc": "Juego de plataformas 2D con estructuras de datos pila y cola.",
+  
+  "project3-title": "Bloques en Orden",
+  "project3-desc": "¡Golpea los bloques numerados en el orden correcto antes de que se acabe el tiempo!",
+  
+  "project4-title": "Prototipo Cañón Ragdoll",
+  "project4-desc": "Prototipo de un cañón que lanza ragdolls, hecho en C++.",
+
+  "copyright": "Copyright © 2025 Julio Rodríguez | Todas las imágenes, logotipos y nombres se utilizan con permiso"
+}
+
