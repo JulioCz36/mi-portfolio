@@ -3,6 +3,10 @@ import { useState } from "react";
 import { Link } from "react-scroll";
 import "./Header.css";
 
+import es from '../assets/languages/español.png';
+import en from '../assets/languages/ingles.png';
+
+
 function Header() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -15,8 +19,8 @@ function Header() {
   };
 
   const currentFlag = i18n.language === "es"
-    ? "./src/assets/languages/español.png"
-    : "./src/assets/languages/ingles.png";
+    ? {es}
+    : {en};
 
   return (
     <header className="header">
