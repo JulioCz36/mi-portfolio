@@ -1,14 +1,14 @@
 import "./Skills.css";
 
-import html from "../assets/skills/html.png";
-import css from "../assets/skills/css.png";
-import js from "../assets/skills/js.png";
-import react from "../assets/skills/react.png";
-import unity from "../assets/skills/unity.png";
-import cplusplus from "../assets/skills/cplusplus.png";
-import visualStudio from "../assets/skills/visualStudio.png";
-import krita from "../assets/skills/krita.png";
-import blender from "../assets/skills/blender.png";
+import html from "../assets/skills/logo_html.png";
+import css from "../assets/skills/logo_css.png";
+import js from "../assets/skills/logo_js.png";
+import react from "../assets/skills/logo_react.png";
+import unity from "../assets/skills/logo_unity.png";
+import cplusplus from "../assets/skills/logo_cplusplus.png";
+import visualStudio from "../assets/skills/logo_visualStudio.png";
+import krita from "../assets/skills/logo_krita.png";
+import blender from "../assets/skills/logo_blender.png";
 
 const skills = [
   { name: "HTML5", icon: html },
