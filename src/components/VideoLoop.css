@@ -4,6 +4,8 @@
   z-index: 1;
   transition: height 0.5s ease;
   overflow: hidden;
+   padding: 0 !important; 
+  margin: 0 !important;  
 }
 .full-height {
   height: 100vh;
@@ -12,9 +14,10 @@
   height: 50vh; 
 }
 .video{
-
-  min-height: 100vh;
+  height: 100vh;
   position: relative;
+  top:0;
+  left: 0;
 }
 
 .video-bg {
