@@ -77,6 +77,15 @@ section {
 
 
 /* Responsive */
+@media (max-width: 1200px) {
+  .full-height {
+    height: 95vh;
+  }
+  .short-height {
+    height: 43vh;
+  }
+}
+
 @media (max-width: 768px) {
   .about-content {
     grid-template-columns: 1fr;
@@ -115,9 +124,25 @@ section {
     font-size: 1rem;
   }
 
-  .about-text {
-    font-size: 0.8rem;
+ .about-content {
+    font-size: 0.5rem;
   }
+  .about-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.about-content p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.full-height {
+    height: 65vh;
+  }
+  .short-height {
+    height: 33vh;
+  }
+
 }
 
 @media (max-width: 480px) {
@@ -132,6 +157,15 @@ section {
   .section-title {
     font-size: 1.2rem;
   }
+  .about-title {
+  font-size: 1.2rem;
+}
+
+.about-content p {
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
 }
 
 /* Pixelation Effect */

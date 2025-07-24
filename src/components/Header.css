@@ -13,6 +13,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      width: 100%;
+      margin: 0 auto;
+      padding: 0 20px;
   }
 
   .link {
@@ -61,13 +64,14 @@
   }
 
   .language-btn {
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-}
-.language-btn img {
-  width: 35px;
-  height: 35px;
-  object-fit: contain;
-}
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+  }
+
+  .language-btn img {
+      width: 35px;
+      height: 35px;
+      object-fit: contain;
+  }

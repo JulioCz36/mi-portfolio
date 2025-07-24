@@ -4,12 +4,16 @@
   z-index: 1;
   transition: height 0.5s ease;
   height: 100vh; 
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 .full-height {
   height: 100vh;
 }
 .short-height {
-  height: 400px; /* o 50vh, o lo que prefieras */
+  height: 50vh; 
 }
 .video-wrapper {
   position: relative;
@@ -20,7 +24,6 @@
 }
 
 .video-wrapper iframe {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;

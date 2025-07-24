@@ -22,7 +22,7 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="container header-container">
+      <div className="header-container">
         <div className="logo">
           <Link to="videos" className="logo-text  link" smooth={true} duration={500}>
             Julio Rodriguez
