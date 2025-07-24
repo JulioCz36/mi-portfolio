@@ -22,5 +22,14 @@
   "project4-title": "Ragdoll Cannon Prototype",
   "project4-desc": "Prototype of a ragdoll cannon built with C++",
 
+  "title-contact": "Contact",
+  "name": "Name",
+  "email": "Email",
+  "message": "Message",
+  "send-message": "Send Message",
+  "sending": "Sending...",
+  "thank-message": "Thanks for your message! I'll get back to you soon.",
+  "send-another": "Send Another Message",
+
   "copyright": "Copyright © 2025 Julio Rodríguez | All images, logos and names are used with permission."
 }

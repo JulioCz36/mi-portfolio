@@ -22,6 +22,15 @@
   "project4-title": "Prototipo Cañón Ragdoll",
   "project4-desc": "Prototipo de un cañón que lanza ragdolls, hecho en C++.",
 
+  "title-contact": "Contacto",
+  "name": "Nombre",
+  "email": "Email",
+  "message": "Mensaje",
+  "send-message": "Enviar Mensaje",
+  "sending": "Enviando...",
+  "thank-message": "¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.",
+  "send-another": "Enviar Otro Mensaje",
+
   "copyright": "Copyright © 2025 Julio Rodríguez | Todas las imágenes, logotipos y nombres se utilizan con permiso"
 }
 

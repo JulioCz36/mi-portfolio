@@ -1,7 +1,9 @@
 import './Contact.css'; 
 import { useRef, useState } from 'react';
+import { useTranslation } from "react-i18next";
 
 function Contact() {
+  const { t} = useTranslation();
   const nameRef = useRef();
   const emailRef = useRef();
   const messageRef = useRef();
@@ -53,13 +55,13 @@ function Contact() {
   return (
     <section id="contact">
       <div className="container">
-        <h2 className="section-title">Contacto</h2>
+        <h2 className="section-title">{t("title-contact")}</h2>
         <div className="contact-container">
           {!isSubmitted ? (
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="form-group">
                 <label htmlFor="name" className="form-label">
-                  Nombre <span className="blink">*</span>
+                  {t("name")}<span className="blink">*</span>
                 </label>
                 <input type="text" id="name" name="name" className="form-input" ref={nameRef} required />
                 {errors.name && <div className="error-message">{errors.name}</div>}
@@ -67,7 +69,7 @@ function Contact() {
 
               <div className="form-group">
                 <label htmlFor="email" className="form-label">
-                  Email <span className="blink">*</span>
+                  {t("email")}<span className="blink">*</span>
                 </label>
                 <input type="email" id="email" name="email" className="form-input" ref={emailRef} required />
                 {errors.email && <div className="error-message">{errors.email}</div>}
@@ -75,14 +77,14 @@ function Contact() {
 
               <div className="form-group">
                 <label htmlFor="message" className="form-label">
-                  Mensaje <span className="blink">*</span>
+                  {t("message")}<span className="blink">*</span>
                 </label>
                 <textarea id="message" name="message" className="form-textarea" ref={messageRef} required />
                 {errors.message && <div className="error-message">{errors.message}</div>}
               </div>
 
               <button type="submit" className="btn" disabled={isSubmitting}>
-                {isSubmitting ? 'Enviando...' : 'Enviar Mensaje'}
+                {isSubmitting ? t("sending") : t("send-message") }
               </button>
 
               {isSubmitting && (
@@ -99,8 +101,8 @@ function Contact() {
             </form>
           ) : (
             <div className="thank-you">
-              <h3 className="thank-you-message">¡Gracias por tu mensaje! Me pondré en contacto contigo pronto.</h3>
-              <button className="btn" onClick={handleSendAnother}>Enviar Otro Mensaje</button>
+              <h3 className="thank-you-message">{t("thank-message")}</h3>
+              <button className="btn" onClick={handleSendAnother}>{t("send-another")}</button>
             </div>
           )}
         </div>

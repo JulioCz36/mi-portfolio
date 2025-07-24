@@ -77,14 +77,6 @@ section {
 
 
 /* Responsive */
-@media (max-width: 1200px) {
-  .full-height {
-    height: 95vh;
-  }
-  .short-height {
-    height: 43vh;
-  }
-}
 
 @media (max-width: 768px) {
   .about-content {
@@ -136,12 +128,6 @@ section {
   font-size: 0.9rem;
   line-height: 1.8;
 }
-.full-height {
-    height: 65vh;
-  }
-  .short-height {
-    height: 33vh;
-  }
 
 }
 
