@@ -2,7 +2,7 @@
 import "./VideoLoop.css";
 import { useEffect, useState } from "react";
 
-import videoFile from "../assets/video.mp4";
+import videoFile from "/videos/platformer_gameplay.mp4";
 
 const VideoLoop = () => {
   

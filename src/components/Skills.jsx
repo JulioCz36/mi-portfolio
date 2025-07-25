@@ -1,4 +1,5 @@
 import "./Skills.css";
+import { useRef, useState, useEffect } from "react";
 
 import html from "../assets/skills/logo_html.png";
 import css from "../assets/skills/logo_css.png";
@@ -24,23 +25,85 @@ const skills = [
 
 
 const Skills = () => {
-  return (
-    <section className="skills-section">
-  <div className="skills-mask">
-    <div className="skill-scroller">
+  const scrollerRef = useRef(null);
+  const [isDragging, setIsDragging] = useState(false);
+  const [startX, setStartX] = useState(0);
+  const [scrollLeft, setScrollLeft] = useState(0);
+
+  const handleMouseDown = (e) => {
+    setIsDragging(true);
+    setStartX(e.pageX - scrollerRef.current.offsetLeft);
+    setScrollLeft(scrollerRef.current.scrollLeft);
+    scrollerRef.current.classList.add("dragging");
+  };
+
+  const handleMouseLeave = () => {
+    setIsDragging(false);
+    scrollerRef.current.classList.remove("dragging");
+  };
+
+  const handleMouseUp = () => {
+    setIsDragging(false);
+    scrollerRef.current.classList.remove("dragging");
+  };
+
+  const handleMouseMove = (e) => {
+    if (!isDragging) return;
+    e.preventDefault();
+    const x = e.pageX - scrollerRef.current.offsetLeft;
+    const walk = (x - startX) * 1;
+    scrollerRef.current.scrollLeft = scrollLeft - walk;
+  };
+
+  useEffect(() => {
+    let animationFrame;
+    const scroll = () => {
+      if (scrollerRef.current && !isDragging) {
+        const el = scrollerRef.current;
+        el.scrollLeft += 1;
+
+        const singleRowWidth = el.scrollWidth / 3;
+        if (el.scrollLeft >= singleRowWidth) {
+          el.scrollLeft -= singleRowWidth;
+        }
+      }
+      animationFrame = requestAnimationFrame(scroll);
+    };
+
+    animationFrame = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationFrame);
+  }, [isDragging]);
+
+  const renderRow = (rowIndex) => (
+    <div className="skill-row" key={rowIndex}>
       {[...skills, ...skills].map((skill, index) => (
-        <div className="skill-item" key={index}>
+        <div className="skill-item" key={`${rowIndex}-${index}`}>
           <div className="skill-icon">
-            <img src={skill.icon} alt={skill.name} className="pixelate" />
+            <img src={skill.icon} alt={`Logo de ${skill.name}`} className="pixelate" />
           </div>
         </div>
       ))}
     </div>
-  </div>
-</section>
+  );
 
+  return (
+    <section className="skills-section block">
+      <div className="skills-mask">
+        <div
+          className="skill-scroller"
+          ref={scrollerRef}
+          onMouseDown={handleMouseDown}
+          onMouseLeave={handleMouseLeave}
+          onMouseUp={handleMouseUp}
+          onMouseMove={handleMouseMove}
+        >
+          {[0, 1, 2].map(renderRow)}
+        </div>
+      </div>
+    </section>
   );
 };
+
 
 export default Skills;
 

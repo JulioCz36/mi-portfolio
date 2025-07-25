@@ -1,0 +1,121 @@
+.project-detail-page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 8rem;
+  padding-bottom: 5rem;
+  gap: 2rem;
+}
+
+.video-preview {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.video-preview video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-detail {
+  width: 30%;
+  height: 394px;
+  overflow-y: auto;
+  padding-right: 10px; 
+}
+.title-proyect {
+    font-size: 1.4rem; 
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--pixel-red);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.project-labels {
+   display: flex;
+    flex-wrap: wrap;
+    gap: 0.3rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+.project-label {
+    background-color: var(--pixel-blue);
+    color: var(--pixel-light);
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.5rem;
+    white-space: nowrap;
+}
+
+.description {
+    font-size: 0.7em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+
+
+.points-title{
+  font-size: .8rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-points {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.7rem;
+  line-height: 1.4;
+}
+
+.project-points li {
+  margin-bottom: 0.4rem;
+}
+
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+  font-size: 0.75rem;
+}
+
+.project-links li {
+  margin-bottom: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-links p {
+  margin: 0;
+  font-weight: bold;
+}
+
+.project-links a {
+  color: var(--pixel-light);
+  background-color: var(--pixel-blue);
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.project-links a:hover {
+  background-color: var(--pixel-red);
+}
+
+
+.project-year {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+}

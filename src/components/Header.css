@@ -1,3 +1,13 @@
+  button {
+      font-family: "Press Start 2P", cursive;
+      text-decoration: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+  }
+  
+  
   header {
       background-color: rgba(255, 0, 0, 0.85);
       position: fixed;
@@ -18,9 +28,6 @@
       padding: 0 20px;
   }
 
-  .link {
-      cursor: pointer
-  }
 
 
   .logo {
@@ -41,15 +48,14 @@
       gap: 20px;
   }
 
-  .nav-links a {
+  .nav-links button {
       color: var(--pixel-light);
-      text-decoration: none;
-      font-size: 0.8rem;
+      font-size: .8rem;
       transition: all 0.3s;
-      padding: 6px;
+      padding: 0;
   }
 
-  .nav-links a:hover {
+  .nav-links button:hover {
       transform: translateY(-3px);
       color: var(--pixel-blue);
   }
@@ -57,17 +63,7 @@
   .menu-toggle {
       display: none;
       font-size: 1.5rem;
-      background: none;
-      border: none;
       color: var(--pixel-light);
-      cursor: pointer;
-  }
-
-  .language-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      padding: 0;
   }
 
   .language-btn img {

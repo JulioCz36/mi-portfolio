@@ -1,6 +1,7 @@
-import { useTranslation } from "react-i18next";
+import { useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
-import { Link } from "react-scroll";
+import { scroller } from "react-scroll";
+import { useTranslation } from 'react-i18next';
 import "./Header.css";
 
 import es from '../assets/languages/es.png';
@@ -10,35 +11,59 @@ import en from '../assets/languages/en.png';
 function Header() {
   const { t, i18n } = useTranslation();
   const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
+  const navigate = useNavigate();
 
   const toggleMenu = () => setMenuOpen(prev => !prev);
-
   const toggleLanguage = () => {
     const newLang = i18n.language === "es" ? "en" : "es";
     i18n.changeLanguage(newLang);
   };
 
- const currentFlag = i18n.language === "es" ? es : en;
+  const currentFlag = i18n.language === "es" ? es : en;
+
+  const isInVideosSection = () => {
+    const videos = document.getElementById("videos");
+    if (!videos) return false;
+
+    const rect = videos.getBoundingClientRect();
+    return rect.top >= 0 && rect.top <= window.innerHeight * 0.5;
+  };
+
+  const goToSection = (section) => {
+
+    if (location.pathname === "/") {
+      scroller.scrollTo(section, {
+        duration: 500,
+        smooth: true,
+        offset: isInVideosSection() ? -320 : -50,
+      });
+    } else {
+      navigate("/", { state: { scrollTo: section } });
+    }
+    setMenuOpen(false);
+  };
+
 
   return (
     <header className="header">
       <div className="header-container">
         <div className="logo">
-          <Link to="videos" className="logo-text  link" smooth={true} duration={500}>
+          <button className="logo-text" onClick={() => goToSection("videos")}>
             Julio Rodriguez
-          </Link>
+          </button>
         </div>
         <nav>
           <button className="menu-toggle" onClick={toggleMenu}>
             <i className="fas fa-bars"></i>
           </button>
           <div className={`nav-links ${menuOpen ? 'show' : ''}`}>
-            <Link to="about" smooth={true} duration={500} className="link">{t("about")}</Link>
-            <Link to="projects" smooth={true} duration={500} className="link">{t("projects")}</Link>
-            <Link to="contact" smooth={true} duration={500} className="link">{t("contact")}</Link>
+            <button onClick={() => goToSection("")} className="link">{t("about")}</button>
+            <button onClick={() => goToSection("projects")} className="link">{t("projects")}</button>
+            <button onClick={() => goToSection("contact")} className="link">{t("contact")}</button>
             <button className="language-btn" onClick={toggleLanguage}>
-            <img src={currentFlag} alt="language" width={35} height={35} />
-          </button>
+              <img src={currentFlag} alt="language" width={35} height={35} />
+            </button>
           </div>
         </nav>
       </div>

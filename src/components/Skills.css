@@ -9,30 +9,32 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  cursor: grab;
+}
+.skills-mask:active {
+  cursor: grabbing;
 }
 
 .skill-scroller {
   display: flex;
-  width: max-content;
-  animation: scroll-left 30s linear infinite;
-  gap: 30px;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  align-items: center;
 }
 
-@keyframes scroll-left {
-  0% {
-    transform: translateX(0);
-  }
 
-  100% {
-    transform: translateX(-50%);
-  }
+.skill-row {
+  display: flex;
+  flex-wrap: nowrap;
+  animation-play-state: running;
+  pointer-events: auto;
 }
 
 .skill-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  flex: 0 0 auto;
   min-width: 100px;
   margin: 0 10px;
 }
@@ -51,13 +53,10 @@
   image-rendering: pixelated;
 }
 
-
 .skill-item:hover .skill-icon {
   transform: scale(1.05);
 }
 
-.pixelate {
-  image-rendering: pixelated;
-  image-rendering: -moz-crisp-edges;
-  image-rendering: crisp-edges;
+.skill-scroller.dragging {
+  cursor: grabbing;
 }

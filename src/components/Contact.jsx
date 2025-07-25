@@ -54,7 +54,7 @@ function Contact() {
   
   return (
     <section id="contact">
-      <div className="container">
+      <div className="container block">
         <h2 className="section-title">{t("title-contact")}</h2>
         <div className="contact-container">
           {!isSubmitted ? (

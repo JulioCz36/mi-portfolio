@@ -1,0 +1,14 @@
+[
+  {
+    "id": "platformer-stacks-queues",
+    "title": "Plataforma con Pilas y Colas",
+    "labels": ["C++","Visual Studio", "Diseño de juegos", "2D Art", "Programador de Juegos"],
+    "description": "Este juego fue desarrollado como proyecto académico. El objetivo era aplicar estructuras de datos de colas y pilas, al comportamiento de los enemigos. El desarrollo fue una excelente oportunidad para combinar mis conocimientos técnicos con decisiones de diseño. Me enfoqué en construir una lógica clara de movimiento por piso. Aporté elementos visuales y animaciones propias para dar personalidad al juego, a pesar de que la mayoría de los assets visuales fueron recursos de terceros. Este proyecto destaca por la implementación funcional de pilas y colas en el gameplay y por su diseño claro orientado a objetivos.",
+    "points": ["Programación general del juego.","Diseño y lógica de enemigos.", "Animaciones creadas a mano."],
+    "video": "../videos/platformer_gameplay.mp4",
+    "year": 2025,
+    "link_download":"https://juliocz36.itch.io/platformer-stacks-queues",
+    "link_git":"https://github.com/JulioCz36/TP3-ProgrVJ-I"
+  }
+]
+
