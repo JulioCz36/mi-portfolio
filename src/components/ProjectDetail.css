@@ -62,8 +62,6 @@
     unicode-bidi: isolate;
 }
 
-
-
 .points-title{
   font-size: .8rem;
   margin-top: 1.5rem;
@@ -118,4 +116,77 @@
 .project-year {
   font-size: 0.75rem;
   margin-top: 1rem;
+}
+
+
+
+@media (max-width: 768px) {
+  .project-detail-page {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    gap: 1.5rem;
+  }
+
+  .video-preview {
+    width: 90%;
+    max-width: 100%;
+  }
+
+  .project-detail {
+    width: 90%;
+    height: auto;
+    overflow-y: visible;
+    padding-right: 0;
+  }
+
+  .title-proyect {
+    font-size: 1.2rem;
+  }
+
+  .project-label {
+    font-size: 0.65rem;
+  }
+
+  .description,
+  .project-points,
+  .project-links,
+  .project-year {
+    font-size: 0.8rem;
+  }
+
+  .points-title {
+    font-size: 0.85rem;
+  }
+
+  .project-links a {
+    font-size: 0.7rem;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title-proyect {
+    font-size: 1rem;
+  }
+
+  .project-label {
+    font-size: 0.55rem;
+  }
+
+  .description {
+    font-size: 0.65rem;
+  }
+
+  .points-title,
+  .project-points,
+  .project-year {
+    font-size: 0.7rem;
+  }
+
+  .project-links a {
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
 }

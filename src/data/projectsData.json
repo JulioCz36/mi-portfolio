@@ -1,5 +1,19 @@
 [
   {
+    "id": "radioactive-train",
+    "title": "Tren Radioactivo con Listas Enlazadas",
+    "labels": ["C++","Visual Studio", "Diseño de juegos", "2D Art", "Programador de Juegos"],
+    "description": "Este juego fue desarrollado como parte de una asignatura universitaria de Programación de Videojuegos I. El objetivo principal era implementar una lista enlazada para simular el comportamiento de un tren que transporta material radioactivo. A medida que avanza por las vías, el jugador debe resolver operaciones matemáticas para mantener y ampliar la formación de vagones. Esta experiencia me permitió aplicar estructuras dinámicas de datos en tiempo real dentro de un entorno gráfico, combinando lógica, diseño de interacción.",
+    "points": [
+    "Implementación de una lista enlazada.",
+    "Sistema de sumas aleatorias.",
+    "Diseño de mecánicas de inserción, ordenamiento y eliminación de nodos."
+  ],
+    "video": "../videos/radioactive_train.mp4",
+    "year": 2025,
+    "link_download":"https://juliocz36.itch.io/radioactive-train",
+    "link_git":"https://github.com/JulioCz36/TP3-ProgrVJ-I"
+  },{
     "id": "platformer-stacks-queues",
     "title": "Plataforma con Pilas y Colas",
     "labels": ["C++","Visual Studio", "Diseño de juegos", "2D Art", "Programador de Juegos"],
@@ -8,7 +22,39 @@
     "video": "../videos/platformer_gameplay.mp4",
     "year": 2025,
     "link_download":"https://juliocz36.itch.io/platformer-stacks-queues",
-    "link_git":"https://github.com/JulioCz36/TP3-ProgrVJ-I"
-  }
+    "link_git":"https://github.com/JulioCz36/TP2-ProgrVJ-I"
+  },
+ {
+  "id": "blocks-in-order",
+  "title": "Blocks in Order",
+  "labels": ["C++","Visual Studio", "Programador de Juegos"],
+  "description": "Blocks in Order es un juego desarrollado como parte del Trabajo Práctico Nº1 para la materia de Programación de Videojuegos I. El objetivo es simple pero desafiante: golpear los bloques en orden ascendente antes de que el tiempo llegue a cero. Cada error penaliza al jugador con una reducción de 10 segundos, agregando presión y dinamismo al gameplay. Esta práctica me permitió aplicar lógica de ordenamiento, detección de colisiones y manipulación de tiempo.",
+  "points": [
+    "Implementación de detectar y validar el orden de los bloques.",
+    "Manejo del tiempo y penalización.",
+    "Sistema de control fluido con movimiento, salto y carrera."
+  ],
+  "video": "../videos/blocks_in_order.mp4",
+  "year": 2025,
+  "link_download": "https://juliocz36.itch.io/blocks-in-order",
+  "link_git": "https://github.com/JulioCz36/TP1-Part2-ProgrVJ-I"
+},
+{
+  "id": "ragdoll-cannon-prototype",
+  "title": "Ragdoll Cannon Prototype - Box2D",
+  "labels": ["C++", "Visual Studio","Box2D", "Física 2D", "Programador de Juegos"],
+  "description": "Este prototipo fue desarrollado como parte de un trabajo práctico para la materia MAVII. El objetivo era crear una mecánica principal basada en disparar ragdolls desde un cañón ubicado en la esquina inferior izquierda de la pantalla. El proyecto está inspirado en el clásico Ragdoll Cannon 3 de Kongregate, y se enfoca en el uso de física realista con Box2D. Incluye obstáculos tanto estáticos como dinámicos y un sistema limitado de entidades activas para optimizar el rendimiento. Esta práctica me permitió aplicar conceptos de simulación física y control de colisiones en un entorno interactivo.",
+  "points": [
+    "Sistema de disparo ajustables mediante el mouse.",
+    "Simulación de físicas para ragdolls.",
+    "Implementación de obstáculos estáticos y dinámicos.",
+    "Gestión de entidadesen pantalla."
+  ],
+  "video": "../videos/ragdoll_cannon_prototype.mp4",
+  "year": 2025,
+  "link_download": "https://juliocz36.itch.io/ragdoll-cannon-prototype",
+  "link_git": "https://github.com/JulioCz36/Unidad-4---MAVII"
+}
+
 ]
 

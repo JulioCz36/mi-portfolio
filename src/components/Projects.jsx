@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
+    id: "radioactive-train",
     titleKey: 'project1-title',
     descriptionKey: 'project1-desc',
     image: 'https://img.itch.zone/aW1nLzIyMDUxMDEyLnBuZw==/315x250%23c/5s4w7V.png',
@@ -18,12 +19,14 @@ const projects = [
     alt: 'Proyecto 2',
   },
   {
+    id: "blocks-in-order",
     titleKey: 'project3-title',
     descriptionKey: 'project3-desc',
     image: 'https://img.itch.zone/aW1nLzIyMDEwMTA2LnBuZw==/315x250%23c/U6YwXF.png',
     alt: 'Proyecto 3',
   },
   {
+    id: "ragdoll-cannon-prototype",
     titleKey: 'project4-title',
     descriptionKey: 'project4-desc',
     image: 'https://img.itch.zone/aW1hZ2UvMzcwNjIwNS8yMjA1NTUwMC5wbmc=/original/WNUzjn.png',
