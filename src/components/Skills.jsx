@@ -9,7 +9,7 @@ import unity from "../assets/skills/logo_unity.png";
 import cplusplus from "../assets/skills/logo_cplusplus.png";
 import visualStudio from "../assets/skills/logo_visualStudio.png";
 import krita from "../assets/skills/logo_krita.png";
-import blender from "../assets/skills/logo_blender.png";
+import pixelorama from "../assets/skills/log_pixelorama.png";
 
 const skills = [
   { name: "HTML5", icon: html },
@@ -20,7 +20,7 @@ const skills = [
   { name: "C++", icon: cplusplus },
   { name: "Visual Studio", icon: visualStudio },
   { name: "Krita", icon: krita },
-  { name: "Blender", icon: blender },
+  { name: "Pixelorama", icon: pixelorama},
 ];
 
 
