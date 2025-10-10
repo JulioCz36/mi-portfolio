@@ -5,6 +5,13 @@ import { Link } from 'react-router-dom';
 
 const projects = [
   {
+  id: "guardian_del_colgante",
+  titleKey: "project5-title",
+  descriptionKey: "project5-desc",
+  image: "https://img.itch.zone/aW1nLzIzMTQ0MTc2LnBuZw==/original/V%2BBEkq.png",
+  alt: "Santa Fe Bridge Defense",
+},
+  {
     id: "radioactive-train",
     titleKey: 'project1-title',
     descriptionKey: 'project1-desc',

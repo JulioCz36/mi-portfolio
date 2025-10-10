@@ -1,4 +1,19 @@
-[
+[{
+  "id": "guardian_del_colgante",
+  "title": "Guardian del Colgante",
+  "labels": ["Unity", "C#", "Game Design", "Team Project"],
+  "description": "Juego desarrollado para la Santa Fe Game Jam Vol. 2, con una duración de desarrollo de 2 semanas. El objetivo principal es defender el mantenimiento del puente de la ciudad de Santa Fe, inspirado en un suceso local y tomando como base la temática propuesta: 'puente'. Controlás a un personaje poco cotidiano armado únicamente con un arma improvisada: 'pebetes podridos'. A medida que avanzás, debés resistir distintas oleadas de enemigos con mecánicas y personalidades únicas, agregando un toque de humor a la experiencia. El arte está inspirado en el clásico Plants vs Zombies, con un estilo sencillo pero cargado de identidad local y divertida.",
+  "points": [
+    "Diseño y programación del gameplay principal.",
+    "Implementación del sistema de oleadas y enemigos.",
+    "Balance general del juego y dirección del diseño.",
+    "Colaboración con el equipo artístico y de prototipado."
+  ],
+  "video": "../videos/radioactive_train.mp4",
+  "year": 2025,
+  "link_download": "https://juliocz36.itch.io/guardian-del-colgante",
+  "link_git": "https://github.com/JulioCz36/Guardian-del-Colgante"
+},
   {
     "id": "radioactive-train",
     "title": "Tren Radioactivo con Listas Enlazadas",
