@@ -2,8 +2,9 @@ import "./VideoLoop.css";
 import { useEffect, useRef, useState } from "react";
 
 const videoFiles = [
+  "/videos/liberacion.mp4",
   "/videos/platformer_gameplay.mp4",
-  "/videos/radioactive_train.mp4",
+  "/videos/ragdoll_cannon_prototype.mp4",
   "/videos/blocks_in_order.mp4",
 ];
 
