@@ -1,4 +1,17 @@
 [{
+  "id": "liberacion",
+  "title": "Liberación",
+  "labels": ["Unity", "C#", "Game Design"],
+  "description": "Es un videojuego plataformero que nació como proyecto para una materia que estoy realizando. En él, el jugador controla a un personaje sin rostro, presentado inicialmente como alguien en búsqueda de libertad. Ambientado en un espacio llamado el limbo, el protagonista deberá atravesar diversos niveles, desbloquear habilidades y enfrentarse a desafíos que lo acercan a comprender qué significa ser libre y recordar quién fue.",
+  "points": [
+    "Diseño y programación del gameplay principal.",
+    "Implementación del sistema de dialogos y progresion."
+  ],
+  "video": "../videos/liberacion.mp4",
+  "year": 2025,
+  "link_download": "https://juliocz36.itch.io/liberacion",
+  "link_git": "https://github.com/JulioCz36/Arcade-Roguelike-Tp"
+},{
   "id": "guardian_del_colgante",
   "title": "Guardian del Colgante",
   "labels": ["Unity", "C#", "Game Design", "Team Project"],
